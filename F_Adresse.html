@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>Facharbeit IPWA01-01</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script src="scriptdb.js"></script>
+       
+
+        
+ 
+
+    </head>
+
+    <header>
+        <div class="container-fluid bg-info p-3">
+     
+            <h1 class="text-center">Titel</h1>
+      
+            <nav>   
+                 <ul class="text-start">
+                     <li class="d-inline"><a class="text-body" href="Facharbeit IPWA01-01.html">Home</a></li>
+                     <li class="d-inline"><a class="text-body" href="Formular.html">Formular</a></li>
+                     <li class="d-inline"><a class="text-body" href="Ueberuns.html">Über uns</a></li>
+                </ul>
+             </nav>
+        </div>
+     
+    </header>
+
+    <body>
+        
+        <div class="row">
+            <div class="col-lg">.col-lg-4
+                <p class="text-center">Bitte wählen Sie den Übergabeort:</p>
+               
+                <div class="text-center dropdown">
+                    <button type="button" class="btn btn-primary" disabled data-bs-toggle="dropdown">
+                      Geschäftsstelle
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="F_GS.html">Übergabe an der Geschäftsstelle</a></li>
+                      <li><a class="dropdown-item" href="F_AH.html">Link 2</a></li>
+                  
+                    </ul>
+                </div> 
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+
+
+
+
+            <div class="col-lg">.col-lg-8
+                <p class="text-center">Bitte wählen Sie den Zielort:</p>
+
+                <div class="text-center dropdown">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                      Auswahl
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><class="dropdown-item" input type="button" class="btn btn-success" value="Submit Button" onclick="setzeOrt(1)">Syrien</li> 
+                      <li><class="dropdown-item" input type="button" class="btn btn-success" value="Submit Button" onclick="setzeOrt(2)">Jemen</li>
+                      <li><a class="dropdown-item" href="F_Adress" input type="button" class="btn btn-success" value="Submit Button" onclick="setzeOrt(3)">Ukraine</a></li>
+                    </ul>
+                    <br>
+                    <br>
+                    <a href="Formular.html" class="btn btn-success">Zurück</a>
+                </div>
+            </div>
+            
+            <div class="col-lg">.col-lg-12
+
+            </div>
+        </div> 
+
+      
+        <div id="check"></div>
+
+        <script>
+            ausgabe(p);
+        </script>
+            
+
+    </body>
+
+    <footer>
+        <nav>
+            <ul class="text-center">
+                <li class="d-inline"><a href="Datenschutz.html">Datenschutz</a></li>
+                <li class="d-inline"><a href="Impressum.html">Impressum</a></li>
+            </ul>
+            
+        </nav>
+    </footer>
+</html> 
