@@ -3,8 +3,11 @@ var Ziel;
 function setzeOrt(p){
     if (p=1) {
     var Ziel="Afrika";
-    window.localStorage.setItem("1", "Afrika");}
+    window.localStorage.setItem(1, "Afrika");}
    // document.getElementById('check').innerHTML = Ziel;
+   else if(p=2) {
+    window.localStorage.setItem(2, "Europa");
+   }
     
 }
 
@@ -20,5 +23,5 @@ function speichern() {
    } 
     
 function ausgabe() {
-    document.getElementById("check").innerHTML = window.localStorage.getItem("1");
+    document.getElementById("check").innerHTML = window.localStorage.getItem(p);
 }
