@@ -62,33 +62,31 @@
                 <p class="text-center">Bitte wählen Sie den Zielort:</p>
 
                 <div class="text-center dropdown">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
-                      Auswahl
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><class="dropdown-item" input type="button" class="btn btn-success" value="Submit Button" onclick="setzeOrt(1)">Syrien</li> 
-                      <li><class="dropdown-item" input type="button" class="btn btn-success" value="Submit Button" onclick="setzeOrt(2)">Jemen</li>
-                      <li><a class="dropdown-item" href="F_Adress" input type="button" class="btn btn-success" value="Submit Button" onclick="setzeOrt(3)">Ukraine</a></li>
-                    </ul>
-                    <br>
-                    <br>
-                    <a href="Formular.html" class="btn btn-success">Zurück</a>
+                    <button type="button" class="btn btn-primary" disabled data-bs-toggle="dropdown"><div id="check"></div>
+                    
                 </div>
             </div>
             
             <div class="col-lg">.col-lg-12
+                <p class="text-center">Bitte geben Sie Ihre Adresse ein:</p>
 
+                <div class="text-center dropdown">
+                <a href="F_GS.html" class="btn btn-success">Zurück</a>
+                </div>
+                
+                <br>
+                <br>
+                <div id="check"></div>
+
+                <script>
+                    p=1;
+                    ausgabe(p);
+                </script>
             </div>
         </div> 
 
       
-        <div id="check"></div>
-
-        <script>
-            ausgabe(p);
-        </script>
-            
-
+      
     </body>
 
     <footer>

@@ -1,12 +1,20 @@
 
+function setzeAbgabe(p){
+    if (p==1) {
+        sessionStorage.setItem(1,"Geschäftsstelle");
+    } else if (p==2) {
+        sessionStorage.setItem(2,"Abholung");
+    }
+}
+
 var Ziel;
 function setzeOrt(p){
     if (p==1) {
-    sessionStorage.setItem(1,"Syrien");
+    sessionStorage.setItem(2,"Syrien");
     } else if (p==2) {
-   sessionStorage.setItem(1,"Yemen");
-    } else if (p==2) {
-    sessionStorage.setItem(1,"Ukraine");
+   sessionStorage.setItem(2,"Yemen");
+    } else if (p==3) {
+    sessionStorage.setItem(2,"Ukraine");
     }
     
 }
