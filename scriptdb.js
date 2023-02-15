@@ -2,12 +2,9 @@
 var Ziel;
 function setzeOrt(p){
     if (p=1) {
-    var Ziel="Afrika";
-    window.localStorage.setItem(1, "Afrika");
-    }
-   // document.getElementById('check').innerHTML = Ziel;
-   else if(p=2) {
-    window.localStorage.setItem(2, "Europa");
+    sessionStorage.setItem(1,"Afrika");
+    } else if (p=2) {
+   sessionStorage.setItem(2,"Europa");
    }
     
 }
@@ -23,6 +20,6 @@ function speichern() {
     document.getElementById('data').value = window.localStorage.getItem(key);
    } 
     
-function ausgabe() {
-    document.getElementById("check").innerHTML = window.localStorage.getItem(2);
+function ausgabe(p) {
+    document.getElementById("check").innerHTML = sessionStorage.getItem(p);
 }
