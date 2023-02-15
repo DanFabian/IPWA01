@@ -3,7 +3,7 @@ var Ziel;
 function setzeOrt(p){
     if (p=1) {
     var Ziel="Afrika";
-    window.localStorage.setItem("1", "Afrioka");}
+    window.localStorage.setItem("1", "Afrika");}
    // document.getElementById('check').innerHTML = Ziel;
     
 }
@@ -20,5 +20,5 @@ function speichern() {
    } 
     
 function ausgabe() {
-    document.getElementById("check").innerHTML = "1";
+    document.getElementById("check").innerHTML = window.localStorage.getItem("1");
 }
