@@ -2,10 +2,12 @@
 var Ziel;
 function setzeOrt(p){
     if (p==1) {
-    sessionStorage.setItem(1,"Afrika");
+    sessionStorage.setItem(1,"Syrien");
     } else if (p==2) {
-   sessionStorage.setItem(2,"Europa");
-   }
+   sessionStorage.setItem(1,"Yemen");
+    } else if (p==2) {
+    sessionStorage.setItem(1,"Ukraine");
+    }
     
 }
 
