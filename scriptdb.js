@@ -23,6 +23,6 @@ function speichern() {
     document.getElementById('data').value = window.localStorage.getItem(key);
    } 
     
-function ausgabe(p) {
-    document.getElementById("check").innerHTML = window.localStorage.getItem(p);
+function ausgabe() {
+    document.getElementById("check").innerHTML = window.localStorage.getItem(2);
 }
