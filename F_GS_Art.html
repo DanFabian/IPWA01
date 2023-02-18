@@ -32,7 +32,7 @@
     <body>
         
         <div class="row">
-            <div class="col-lg">.col-lg-4
+            <div class="col-lg">Spalte 1
                 <p class="text-center">Bitte wählen Sie den Übergabeort:</p>
                
                 <div class="text-center dropdown">
@@ -103,6 +103,29 @@
                     <a href="F-GS.html" input type="button" class="btn btn-success">Zurück</a>
 
             </div>
+            
+            <script>
+            
+                if(sessionStorage.getItem(1)==="Abholung"){
+                    <form action="/action_page.php">
+                        <div class="mb-3 mt-3">
+                            <label for="email" class="form-label">Email:</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email"></input>
+                        </div>
+                        <div class="mb-3">
+                            <label for="pwd" class="form-label">Password:</label>
+                            <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd"></input>
+                        </div>
+                        <div class="form-check mb-3">
+                            <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" name="remember"> Remember me</input>
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form> 
+                }
+                
+            </script>
         </div> 
 
       

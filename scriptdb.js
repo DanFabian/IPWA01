@@ -3,7 +3,7 @@ function setzeAbgabe(p){
     if (p==1) {
         sessionStorage.setItem(1,"Geschäftsstelle");
     } else if (p==2) {
-        sessionStorage.setItem(2,"Abholung");
+        sessionStorage.setItem(1,"Abholung");
     }
 }
 
