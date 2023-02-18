@@ -37,7 +37,7 @@
                
                 <div class="text-center dropdown">
                     <button type="button" class="btn btn-primary" disabled data-bs-toggle="dropdown">
-                      Geschäftsstelle
+                      Abgabeort
                     </button>
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="F_GS.html">Übergabe an der Geschäftsstelle</a></li>
@@ -60,16 +60,21 @@
 
             <div class="col-lg">.col-lg-8
                 <p class="text-center">Bitte wählen Sie den Zielort:</p>
+                
+                <script>
+                    p=2;
+                    ausgabe(p);
+                </script>
 
                 <div class="text-center dropdown">
-                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
-                      Auswahl
-                    </button>
-                    
+                    <button type="button" class="btn btn-primary" disabled data-bs-toggle="dropdown">
+                        <div id="check"></div>
+                    </button>       
+
                     <ul class="dropdown-menu">
-                      <li><a href="F_GS_Art.html" class="dropdown-item" input type="button" class="btn btn-success" value="Submit Button" onclick="setzeOrt(1)">Syrien</a></li> 
-                      <li><a href="F_GS_Art.html" class="dropdown-item" input type="button" class="btn btn-success" value="Submit Button" onclick="setzeOrt(2)">Jemen</a></li>
-                      <li><a href="F_GS_Art.html" class="dropdown-item" input type="button" class="btn btn-success" value="Submit Button" onclick="setzeOrt(3)">Ukraine</a></li>
+                      <li><a href="Zusammenfassung.html" class="dropdown-item" input type="button" class="btn btn-success" value="Submit Button" onclick="setzeOrt(1)">Syrien</a></li> 
+                      <li><a href="Zusammenfassung.html" class="dropdown-item" input type="button" class="btn btn-success" value="Submit Button" onclick="setzeOrt(2)">Jemen</a></li>
+                      <li><a href="Zusammenfassung.html" class="dropdown-item" input type="button" class="btn btn-success" value="Submit Button" onclick="setzeOrt(3)">Ukraine</a></li>
                     </ul>
                     <br>
                     <br>
@@ -87,7 +92,7 @@
         <div id="check"></div>
 
         <script>
-            p=1;
+            p=2;
             ausgabe(p);
         </script>
             
