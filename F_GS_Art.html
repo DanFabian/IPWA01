@@ -37,7 +37,9 @@
                
                 <div class="text-center dropdown">
                     <button type="button" class="btn btn-primary" disabled data-bs-toggle="dropdown">
-                      Abgabeort
+                        <script>
+                            document.write(sessionStorage.getItem(1));
+                        </script>
                     </button>
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="F_GS.html">Übergabe an der Geschäftsstelle</a></li>
@@ -60,15 +62,12 @@
 
             <div class="col-lg">.col-lg-8
                 <p class="text-center">Bitte wählen Sie den Zielort:</p>
-                
-                <script>
-                    p=2;
-                    ausgabe(p);
-                </script>
 
                 <div class="text-center dropdown">
                     <button type="button" class="btn btn-primary" disabled data-bs-toggle="dropdown">
-                        <div id="check"></div>
+                        <script>
+                            document.write(sessionStorage.getItem(2));
+                        </script>
                     </button>       
 
                     <ul class="dropdown-menu">
@@ -78,13 +77,31 @@
                     </ul>
                     <br>
                     <br>
-                    <a href="Formular.html" input type="button" class="btn btn-success">Zurück</a>
+                    <a href="F_GS.html" input type="button" class="btn btn-success">Zurück</a>
+
+                    
                  
                 </div>
             </div>
             
             <div class="col-lg">.col-lg-12
+
+                <p class="text-center">Bitte wählen Sie die Art der Kleiderspende:</p>
                 
+                <div class="text-center dropdown">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="dropdown">
+                        Auswahl
+                    </button>       
+
+                    <ul class="dropdown-menu">
+                      <li><a href="Zusammenfassung.html" class="dropdown-item" input type="button" class="btn btn-success" value="Submit Button" onclick="setzeArt(1)">Kinderkleidung</a></li> 
+                      <li><a href="Zusammenfassung.html" class="dropdown-item" input type="button" class="btn btn-success" value="Submit Button" onclick="setzeArt(2)">Männerkleidung</a></li>
+                      <li><a href="Zusammenfassung.html" class="dropdown-item" input type="button" class="btn btn-success" value="Submit Button" onclick="setzeArt(3)">Frauenkleidung</a></li>
+                    </ul>
+                    <br>
+                    <br>
+                    <a href="F-GS.html" input type="button" class="btn btn-success">Zurück</a>
+
             </div>
         </div> 
 

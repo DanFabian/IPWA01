@@ -37,7 +37,9 @@
                
                 <div class="text-center dropdown">
                     <button type="button" class="btn btn-primary" disabled data-bs-toggle="dropdown">
-                      Geschäftsstelle
+                        <script>
+                            document.write(sessionStorage.getItem(1));
+                        </script>
                     </button>
                     <ul class="dropdown-menu">
                       <li><a class="dropdown-item" href="F_GS.html">Übergabe an der Geschäftsstelle</a></li>

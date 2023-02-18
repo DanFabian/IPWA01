@@ -19,6 +19,18 @@ function setzeOrt(p){
     
 }
 
+function setzeArt(p){
+    if (p==1) {
+    sessionStorage.setItem(3,"Kinderkleidung");
+    } else if (p==2) {
+   sessionStorage.setItem(3,"Männerkleidung");
+    } else if (p==3) {
+    sessionStorage.setItem(3,"Frauenkleidung");
+    }
+    
+}
+
+
 function speichern() {
     var key = document.getElementById('key').value;
     var data = document.getElementById('data').value;
