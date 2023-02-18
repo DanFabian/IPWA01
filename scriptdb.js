@@ -45,3 +45,4 @@ function speichern() {
 function ausgabe(p) {
     document.getElementById("check").innerHTML = sessionStorage.getItem(p);
 }
+
