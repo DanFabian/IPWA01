@@ -35,11 +35,13 @@
         <div class="row">
             <p class="text-center">Zusammenfassung
             <br>
+            <br>
             Abgabeort:
             <br>
             <script>
                 document.write(sessionStorage.getItem(1));
             </script>
+            <br>
             <br>
             Zielort:
             <br>
@@ -47,10 +49,21 @@
                 document.write(sessionStorage.getItem(2));
             </script>
             <br>
+            <br>
             Art der Kleidung:
             <br>
             <script>
                 document.write(sessionStorage.getItem(3));
+            </script>
+            <br>
+            <br>
+            Adresse:
+            <br>
+
+            <script>
+                for (let i = 10; i < 15; i++) {
+                document.write(sessionStorage.getItem(i) +"<br>");
+                }
             </script>
 
 

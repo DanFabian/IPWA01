@@ -2,46 +2,44 @@
 function setzeAbgabe(p){
     if (p==1) {
         sessionStorage.setItem(1,"Geschäftsstelle");
-        sessionStorage.setItem(10,true);
+        document.getElementById("Ort").innerHTML = "Abgabe Geschäftsstelle";
+        zeigeadresse();
     } else if (p==2) {
         sessionStorage.setItem(1,"Abholung");
+        document.getElementById("Ort").innerHTML = "Abholung";
+        zeigeadresse();
     }
 }
 
 var Ziel;
 function setzeOrt(p){
     if (p==1) {
-    sessionStorage.setItem(2,"Syrien");
+        sessionStorage.setItem(2,"Syrien");
+        document.getElementById("Ziel").innerHTML = "Syrien";
     } else if (p==2) {
-   sessionStorage.setItem(2,"Yemen");
+        sessionStorage.setItem(2,"Jemen");
+        document.getElementById("Ziel").innerHTML = "Jemen";
     } else if (p==3) {
-    sessionStorage.setItem(2,"Ukraine");
+        sessionStorage.setItem(2,"Ukraine");
+        document.getElementById("Ziel").innerHTML = "Ukraine";
     }
     
 }
 
 function setzeArt(p){
     if (p==1) {
-    sessionStorage.setItem(3,"Kinderkleidung");
+        sessionStorage.setItem(3,"Kinderkleidung")
+        document.getElementById("Kleidung").innerHTML = "Kinderkleidung";
     } else if (p==2) {
-   sessionStorage.setItem(3,"Männerkleidung");
+        sessionStorage.setItem(3,"Männerkleidung");
+        document.getElementById("Kleidung").innerHTML = "Männerkleidung";
     } else if (p==3) {
-    sessionStorage.setItem(3,"Frauenkleidung");
+        sessionStorage.setItem(3,"Frauenkleidung");
+        document.getElementById("Kleidung").innerHTML = "Frauenkleidung";
     }
     
 }
 
-
-function speichern() {
-    var key = document.getElementById('key').value;
-    var data = document.getElementById('data').value;
-    window.localStorage.setItem(key, data);
-   }
-   
-   function lesen() {
-    var key = document.getElementById('key').value;
-    document.getElementById('data').value = window.localStorage.getItem(key);
-   } 
     
 function ausgabe(p) {
     document.getElementById("check").innerHTML = sessionStorage.getItem(p);
@@ -49,9 +47,19 @@ function ausgabe(p) {
 
 function zeigeadresse() {
     var x = document.getElementById('adresse');
-    if (sessionStorage.getItem(10) == 'true') {
-      x.style.visibility = 'visible';
+    if (sessionStorage.getItem(1) == "Geschäftsstelle") {
+      x.style.display = "none";
     } else {
-      x.style.visibility = 'hidden';
+      x.style.display = "block";
     }
   } 
+
+  function formularabsenden() {
+    const x = document.forms["adresse"];
+    let text = "";
+    for (let i = 0; i < x.length ;i++) {
+    text = x.elements[i].value;
+    sessionStorage.setItem(i+10,text);
+    }
+
+  }
