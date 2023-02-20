@@ -97,23 +97,31 @@
                     <br>
                     <br>
 
-                    <form id="adresse">
-                        <p>Adresse:</p>
-                        <input type="text" class="form-control" class ="Nachname" id = "Nachname" placeholder="Nachname">
-                        <input type="text" class="form-control" placeholder="Vorname">
-                        <input type="text" class="form-control" placeholder="Stasse">
-                        <input type="text" class="form-control" placeholder="PLZ">
-                        <input type="text" class="form-control" placeholder="Ort">
+                    <form id="adresse" action="Zusammenfassung.html">
+                        <fieldset>
+                        <legend>Adresse:</legend>
+                        <input type="text" class="form-control" placeholder="Nachname" required>
+                        <input type="text" class="form-control" placeholder="Vorname" required>
+                        <input type="text" class="form-control" placeholder="Stasse" required>
+                        <input type="text" class="form-control" placeholder="PLZ" required pattern="[0-9]{5}">
+                        <input type="text" class="form-control" placeholder="Ort" required>
+                        <input type="reset" class = "btn btn-success">
+                        <input type="submit" value = "Absenden"  class="btn btn-success" onclick = formularabsenden()>
+                        </fieldset>
                     </form>
+                      
                     <br>
                     <br>
+                    <a href="Zusammenfassung.html" id="submitb" input type="button" class="btn btn-success" onclick = formularabsenden()>Absenden</a>
                     <script>
                         document.getElementById('adresse').style.display = "none";
+                        document.getElementById('submitb').style.display = "none";
                     </script>
                     
-                    
+                   
+                   
                     <a href="index.html" input type="button" class="btn btn-success">Zurück</a>
-                    <a href="Zusammenfassung.html" input type="button" class="btn btn-success" onclick = formularabsenden() >Absenden</a>
+                    
             </div>
             
         </div> 
