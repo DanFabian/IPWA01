@@ -2,6 +2,7 @@
 function setzeAbgabe(p){
     if (p==1) {
         sessionStorage.setItem(1,"Geschäftsstelle");
+        sessionStorage.setItem(10,true);
     } else if (p==2) {
         sessionStorage.setItem(1,"Abholung");
     }
@@ -45,3 +46,12 @@ function speichern() {
 function ausgabe(p) {
     document.getElementById("check").innerHTML = sessionStorage.getItem(p);
 }
+
+function zeigeadresse() {
+    var x = document.getElementById('adresse');
+    if (sessionStorage.getItem(10) == 'true') {
+      x.style.visibility = 'visible';
+    } else {
+      x.style.visibility = 'hidden';
+    }
+  } 
