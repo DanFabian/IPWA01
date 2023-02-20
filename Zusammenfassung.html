@@ -57,12 +57,20 @@
             </script>
             <br>
             <br>
-            Adresse:
+            
             <br>
 
             <script>
-                for (let i = 11; i < 16; i++) {
-                document.write(sessionStorage.getItem(i) +"<br>");
+                if (sessionStorage.getItem(1) == "Abholung") {
+                    if(sessionStorage.getItem(14) > 54999 && sessionStorage.getItem(14) < 56001) {
+                    document.write("Adresse:" + "<br>");
+                    for (let i = 11; i < 16; i++) {
+                    document.write(sessionStorage.getItem(i) +"<br>");
+                        }
+                    }
+                    else {
+                        document.write("Abholung leider nicht möglich");
+                    }
                 }
             </script>
 
