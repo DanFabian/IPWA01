@@ -34,53 +34,64 @@
     </header>
 
     <body>
-
-            <p class="text-center">Zusammenfassung
+            <h3 class="text-center"> <dt>Zusammenfassung</dt> </h3>
             <br>
+         
+            <dt class = "text-center"> Zeit und Datum:</dt>
+          
+            <p class = "text-center">
+                <script>
+                document.write (new Date());
+                </script> </p>
             <br>
-            Abgabeort:
-            <br>
+            
+            <dt class = "text-center">Abgabeort:</dt>
+          
+            <p class = "text-center">
             <script>
                 document.write(sessionStorage.getItem(1));
-            </script>
+            </script></p>
             <br>
-            <br>
-            Zielort:
-            <br>
+         
+            <dt class = "text-center">Zielort:</dt>
+          
+            <p class = "text-center">
             <script>
                 document.write(sessionStorage.getItem(2));
-            </script>
+            </script></p>
             <br>
-            <br>
-            Art der Kleidung:
-            <br>
+          
+            <dt class = "text-center">Art der Kleidung:</dt>
+            
+            <p class = "text-center">
             <script>
                 document.write(sessionStorage.getItem(3));
             </script>
             <br>
-            <br>
-            
-            <br>
+            <p class = "text-center">
+
 
             <script>
                 if (sessionStorage.getItem(1) == "Abholung") {
                     if(sessionStorage.getItem(14) > 54999 && sessionStorage.getItem(14) < 56001) {
-                        document.write("Adresse:" + "<br>");
+                        document.write("<b>Adresse:</b>" + "<br>")
+
                         for (let i = 11; i < 16; i++) {
                             document.write(sessionStorage.getItem(i) +"<br>");
                         }
                     }
                     else {
-                        document.write("Abholung leider nicht möglich");
+                        document.write("<br>" + "<b>Abholung leider nicht möglich</b>");
+                        
                     }
                 }
             </script>
 
 
             </p>
-                
+            <script>
 
-
+        </script>
       </body>
 
     <footer>
