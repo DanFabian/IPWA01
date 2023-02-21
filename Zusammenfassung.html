@@ -15,24 +15,26 @@
 
     <header>
         <div class="container-fluid bg-info p-3">
-     
-            <h1 class="text-center">Titel</h1>
+            <img src="C:\uni\GitClone\Uni1\Grafik\Logo.png"   height="120" width="140">
+       
+           
+                        <h1 class="text-center">Help Group</h1>
       
+            <br>
+          
             <nav>   
                  <ul class="text-start">
-                     <li class="d-inline"><a class="text-body" href="Facharbeit IPWA01-01.html">Home</a></li>
-                     <li class="d-inline"><a class="text-body" href="Formular.html">Formular</a></li>
+                     <li class="d-inline"><a class="text-body" href="index.html">Home</a></li>
+                     <li class="d-inline"><a class="text-body" href="Formular2.html">Formular</a></li>
                      <li class="d-inline"><a class="text-body" href="Ueberuns.html">Über uns</a></li>
                 </ul>
              </nav>
-        </div>
+            </div> 
      
     </header>
 
     <body>
 
-
-        <div class="row">
             <p class="text-center">Zusammenfassung
             <br>
             <br>
@@ -63,9 +65,9 @@
             <script>
                 if (sessionStorage.getItem(1) == "Abholung") {
                     if(sessionStorage.getItem(14) > 54999 && sessionStorage.getItem(14) < 56001) {
-                    document.write("Adresse:" + "<br>");
-                    for (let i = 11; i < 16; i++) {
-                    document.write(sessionStorage.getItem(i) +"<br>");
+                        document.write("Adresse:" + "<br>");
+                        for (let i = 11; i < 16; i++) {
+                            document.write(sessionStorage.getItem(i) +"<br>");
                         }
                     }
                     else {
@@ -78,18 +80,18 @@
             </p>
                 
 
-        </div>
-      
-      
-    </body>
+
+      </body>
 
     <footer>
+        <div class="container-fluid bg-info p-3">
         <nav>
             <ul class="text-center">
                 <li class="d-inline"><a href="Datenschutz.html">Datenschutz</a></li>
                 <li class="d-inline"><a href="Impressum.html">Impressum</a></li>
             </ul>
-            
         </nav>
+        </div>
     </footer>
+
 </html> 
