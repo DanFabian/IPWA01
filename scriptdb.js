@@ -2,47 +2,98 @@
 function setzeAbgabe(p){
     if (p==1) {
         sessionStorage.setItem(1,"Geschäftsstelle");
+        document.getElementById("Ort").innerHTML = "Abgabe Geschäftsstelle";
+      
+        checkinput();
     } else if (p==2) {
         sessionStorage.setItem(1,"Abholung");
+        document.getElementById("Ort").innerHTML = "Abholung";
+      
+        checkinput();
     }
 }
 
 var Ziel;
 function setzeOrt(p){
     if (p==1) {
-    sessionStorage.setItem(2,"Syrien");
+        sessionStorage.setItem(2,"Syrien");
+        document.getElementById("Ziel").innerHTML = "Syrien";
+        checkinput();
     } else if (p==2) {
-   sessionStorage.setItem(2,"Yemen");
+        sessionStorage.setItem(2,"Jemen");
+        document.getElementById("Ziel").innerHTML = "Jemen";
+        checkinput();
     } else if (p==3) {
-    sessionStorage.setItem(2,"Ukraine");
+        sessionStorage.setItem(2,"Ukraine");
+        document.getElementById("Ziel").innerHTML = "Ukraine";
+        checkinput();
     }
     
 }
 
 function setzeArt(p){
     if (p==1) {
-    sessionStorage.setItem(3,"Kinderkleidung");
+        sessionStorage.setItem(3,"Kinderkleidung")
+        document.getElementById("Kleidung").innerHTML = "Kinderkleidung";
+        checkinput();
     } else if (p==2) {
-   sessionStorage.setItem(3,"Männerkleidung");
+        sessionStorage.setItem(3,"Männerkleidung");
+        document.getElementById("Kleidung").innerHTML = "Männerkleidung";
+        checkinput();
     } else if (p==3) {
-    sessionStorage.setItem(3,"Frauenkleidung");
+        sessionStorage.setItem(3,"Frauenkleidung");
+        document.getElementById("Kleidung").innerHTML = "Frauenkleidung";
+        checkinput();
     }
     
 }
 
-
-function speichern() {
-    var key = document.getElementById('key').value;
-    var data = document.getElementById('data').value;
-    window.localStorage.setItem(key, data);
-   }
-   
-   function lesen() {
-    var key = document.getElementById('key').value;
-    document.getElementById('data').value = window.localStorage.getItem(key);
-   } 
     
 function ausgabe(p) {
     document.getElementById("check").innerHTML = sessionStorage.getItem(p);
 }
 
+<<<<<<< HEAD
+=======
+function zeigeadresse() {
+    var x = document.getElementById('adresse');
+    var y = document.getElementById('submitb');
+    if (sessionStorage.getItem(1) == "Geschäftsstelle") {
+      x.style.display = "none";
+      y.style.display = "block";
+    } else {
+      x.style.display = "block";
+      y.style.display = "block";
+    }
+  } 
+
+  // Speicherung der Daten aus dem Adressformular
+  function formularabsenden() {
+     
+        const x = document.forms["adresse"];
+        let text = "";
+        for (let i = 0; i < x.length ;i++) {
+        text = x.elements[i].value;
+        sessionStorage.setItem(i+10,text);
+        }
+
+
+  }
+  // Überprüfung ob das Adressfeld sichtbar sein muss oder nicht. Wenn nicht dann ist ein alternativer Submit Button sichtbar
+  function checkinput() {
+    var x = document.getElementById('adresse');
+    var y = document.getElementById('submitb');
+    if (sessionStorage.getItem(1) != null && sessionStorage.getItem(2) != null && sessionStorage.getItem(3) != null && sessionStorage.getItem(1) != "Geschäftsstelle") {
+        x.style.display = "inline";
+        y.style.display = "none";
+    } else if (sessionStorage.getItem(1) != null && sessionStorage.getItem(2) != null && sessionStorage.getItem(3) != null && sessionStorage.getItem(1) == "Geschäftsstelle") {
+        x.style.display = "none";
+        y.style.display = "inline";
+    }
+  }
+
+  //Reset der Eingabedaten
+  function Reset() {
+    sessionStorage.clear();
+  }
+>>>>>>> 44e24ce71e9af50d55b8ce5dba5e8de2a1345ba5

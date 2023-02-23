@@ -77,7 +77,6 @@
                     </ul>
                     <br>
                     <br>
-                    <a href="F_GS.html" input type="button" class="btn btn-success">Zurück</a>
 
                     
                  
@@ -90,20 +89,39 @@
                 
                 <div class="text-center dropdown">
                     <button type="button" class="btn btn-primary" data-bs-toggle="dropdown">
-                        Auswahl
+                        <div id="Kleidung">Auswahl</div>
                     </button>       
 
                     <ul class="dropdown-menu">
-                      <li><a href="Zusammenfassung.html" class="dropdown-item" input type="button" class="btn btn-success" value="Submit Button" onclick="setzeArt(1)">Kinderkleidung</a></li> 
+                      <li><class="dropdown-item" input type="button" class="btn btn-success" value="Submit Button" onclick="setzeArt(1)">Kinderkleidung</li> 
                       <li><a href="Zusammenfassung.html" class="dropdown-item" input type="button" class="btn btn-success" value="Submit Button" onclick="setzeArt(2)">Männerkleidung</a></li>
                       <li><a href="Zusammenfassung.html" class="dropdown-item" input type="button" class="btn btn-success" value="Submit Button" onclick="setzeArt(3)">Frauenkleidung</a></li>
                     </ul>
                     <br>
                     <br>
-                    <a href="F-GS.html" input type="button" class="btn btn-success">Zurück</a>
 
+                    <div id="adresse">
+                        <p>Adresse:</p>
+                        <input type="text" class="form-control" placeholder="Nachname">
+                        <input type="text" class="form-control" placeholder="Vorname">
+                        <input type="text" class="form-control" placeholder="Stasse">
+                        <input type="text" class="form-control" placeholder="PLZ">
+                        <input type="text" class="form-control" placeholder="Ort">
+                    </div>
+                    <br>
+                    <br>
+            
+                    <script>
+                         var x = document.getElementById('adresse');
+                            if (sessionStorage.getItem(1) == 'Geschäftsstelle') {
+                             x.style.display = "none";
+                            } 
+                    </script>
+
+                    <a href="F-GS.html" input type="button" class="btn btn-success">Zurück</a>
             </div>
             
+<<<<<<< HEAD
             <form action="/action_page.php">
                 <div class="mb-3 mt-3">
                     <label for="email" class="form-label">Email:</label>
@@ -120,6 +138,8 @@
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form> 
+=======
+>>>>>>> 44e24ce71e9af50d55b8ce5dba5e8de2a1345ba5
         </div> 
 
       
