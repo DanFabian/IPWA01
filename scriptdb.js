@@ -53,8 +53,6 @@ function ausgabe(p) {
     document.getElementById("check").innerHTML = sessionStorage.getItem(p);
 }
 
-<<<<<<< HEAD
-=======
 function zeigeadresse() {
     var x = document.getElementById('adresse');
     var y = document.getElementById('submitb');
@@ -96,4 +94,3 @@ function zeigeadresse() {
   function Reset() {
     sessionStorage.clear();
   }
->>>>>>> 44e24ce71e9af50d55b8ce5dba5e8de2a1345ba5
