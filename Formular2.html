@@ -34,6 +34,10 @@
     </header>
 
     <body>
+
+        <script>
+            Reset();
+        </script>
         
         <div class="row">
             <div class="col-lg">Spalte 1
@@ -108,8 +112,8 @@
                         </legend>
                         <input type="text" class="form-control" placeholder="Nachname" required>
                         <input type="text" class="form-control" placeholder="Vorname" required>
-                        <input type="text" class="form-control" placeholder="Stasse" required>
-                        <input type="text" class="form-control" placeholder="PLZ" required pattern="[0-9]{5}">
+                        <input type="text" class="form-control" placeholder="Strasse" required>
+                        <input type="text" class="form-control" placeholder="PLZ (5-Stellig)" required pattern="[0-9]{5}">
                         <input type="text" class="form-control" placeholder="Ort" required>
                         <input type="reset" class = "btn btn-success">
                         <input type="submit" value = "Absenden"  class="btn btn-success" onclick = formularabsenden()>

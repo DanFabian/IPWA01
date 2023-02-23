@@ -65,6 +65,7 @@ function zeigeadresse() {
     }
   } 
 
+  // Speicherung der Daten aus dem Adressformular
   function formularabsenden() {
      
         const x = document.forms["adresse"];
@@ -76,7 +77,7 @@ function zeigeadresse() {
 
 
   }
-
+  // Überprüfung ob das Adressfeld sichtbar sein muss oder nicht. Wenn nicht dann ist ein alternativer Submit Button sichtbar
   function checkinput() {
     var x = document.getElementById('adresse');
     var y = document.getElementById('submitb');
@@ -87,4 +88,9 @@ function zeigeadresse() {
         x.style.display = "none";
         y.style.display = "inline";
     }
+  }
+
+  //Reset der Eingabedaten
+  function Reset() {
+    sessionStorage.clear();
   }
