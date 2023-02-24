@@ -31,6 +31,7 @@ function setzeOrt(p){
     
 }
 
+
 // Art der Kleidung wird gespeichert
 function setzeArt(p){
     if (p==1) {
@@ -54,17 +55,6 @@ function ausgabe(p) {
     document.getElementById("check").innerHTML = sessionStorage.getItem(p);
 }
 
-//function zeigeadresse() {
-//    var x = document.getElementById('adresse');
-//    var y = document.getElementById('submitb');
-//   if (sessionStorage.getItem(1) == "Geschäftsstelle") {
-//      x.style.display = "none";
-//     y.style.display = "block";
-//   } else {
-//      x.style.display = "block";
-//      y.style.display = "block";
-//    }
-//  } 
 
   // Speicherung der Daten aus dem Adressformular
   function formularabsenden() {
@@ -75,9 +65,9 @@ function ausgabe(p) {
         text = x.elements[i].value;
         sessionStorage.setItem(i+10,text);
         }
+    }
 
 
-  }
   // Überprüfung ob das Adressfeld sichtbar sein muss oder nicht. Wenn nicht dann ist ein alternativer Submit Button sichtbar
   function checkinput() {
     var x = document.getElementById('adresse');
@@ -90,6 +80,7 @@ function ausgabe(p) {
         y.style.display = "inline";
     }
   }
+
 
   //Reset der Eingabedaten
   function Reset() {
