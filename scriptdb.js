@@ -1,4 +1,4 @@
-
+// Abgabeort wird gespeichert
 function setzeAbgabe(p){
     if (p==1) {
         sessionStorage.setItem(1,"Geschäftsstelle");
@@ -13,7 +13,7 @@ function setzeAbgabe(p){
     }
 }
 
-var Ziel;
+// Zielort wird gespeichert
 function setzeOrt(p){
     if (p==1) {
         sessionStorage.setItem(2,"Syrien");
@@ -31,6 +31,7 @@ function setzeOrt(p){
     
 }
 
+// Art der Kleidung wird gespeichert
 function setzeArt(p){
     if (p==1) {
         sessionStorage.setItem(3,"Kinderkleidung")
@@ -53,17 +54,17 @@ function ausgabe(p) {
     document.getElementById("check").innerHTML = sessionStorage.getItem(p);
 }
 
-function zeigeadresse() {
-    var x = document.getElementById('adresse');
-    var y = document.getElementById('submitb');
-    if (sessionStorage.getItem(1) == "Geschäftsstelle") {
-      x.style.display = "none";
-      y.style.display = "block";
-    } else {
-      x.style.display = "block";
-      y.style.display = "block";
-    }
-  } 
+//function zeigeadresse() {
+//    var x = document.getElementById('adresse');
+//    var y = document.getElementById('submitb');
+//   if (sessionStorage.getItem(1) == "Geschäftsstelle") {
+//      x.style.display = "none";
+//     y.style.display = "block";
+//   } else {
+//      x.style.display = "block";
+//      y.style.display = "block";
+//    }
+//  } 
 
   // Speicherung der Daten aus dem Adressformular
   function formularabsenden() {
