@@ -57,13 +57,22 @@ function ausgabe(p) {
 
 
   // Speicherung der Daten aus dem Adressformular
-  function formularabsenden() {
-     
-        const x = document.forms["adresse"];
-        let text = "";
-        for (let i = 0; i < x.length ;i++) {
-        text = x.elements[i].value;
-        sessionStorage.setItem(i+10,text);
+  function formularabsenden(p) {
+        if(p == 1){
+            const x = document.forms["adresse"];
+            let text = "";
+            for (let i = 1; i < x.length ;i++) {
+            text = x.elements[i].value;
+            sessionStorage.setItem(i+10,text);
+        }
+        }
+        else if(p == 2){
+            const x = document.forms["nurname"];
+            let text = "";
+            for (let i = 1; i < x.length ;i++) {
+            text = x.elements[i].value;
+            sessionStorage.setItem(i+10,text);
+            }    
         }
     }
 
@@ -71,7 +80,7 @@ function ausgabe(p) {
   // Überprüfung ob das Adressfeld sichtbar sein muss oder nicht. Wenn nicht dann ist ein alternativer Submit Button sichtbar
   function checkinput() {
     var x = document.getElementById('adresse');
-    var y = document.getElementById('submitb');
+    var y = document.getElementById('nurname');
     if (sessionStorage.getItem(1) != null && sessionStorage.getItem(2) != null && sessionStorage.getItem(3) != null && sessionStorage.getItem(1) != "Geschäftsstelle") {
         x.style.display = "inline";
         y.style.display = "none";

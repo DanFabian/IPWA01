@@ -36,7 +36,8 @@
     <body>
 
         <script>
-            Reset();
+            Reset()
+        
         </script>
         
         <div class="row">
@@ -108,30 +109,48 @@
                         <fieldset>
                         <legend>Adresse:
                             <br>
-                            Bitte beachten Sie das eine Abgabe nur im PLZ- Bereich 55 möglich ist
+                            Bitte beachten Sie das eine Abgabe<br>
+                            nur im PLZ- Bereich 55 möglich ist
                         </legend>
                         <input type="text" class="form-control" placeholder="Nachname" required>
                         <input type="text" class="form-control" placeholder="Vorname" required>
-                        <input type="text" class="form-control" placeholder="Strasse" required>
+                        <input type="text" class="form-control" placeholder="E-Mail" required>
+                        <input type="text" class="form-control" placeholder="Strasse" required>                 
                         <input type="text" class="form-control" placeholder="PLZ (5-Stellig)" required pattern="[0-9]{5}">
                         <input type="text" class="form-control" placeholder="Ort" required>
                         <input type="reset" class = "btn btn-success">
-                        <input type="submit" value = "Absenden"  class="btn btn-success" onclick = formularabsenden()>
+                        <input type="submit" value = "Absenden"  class="btn btn-success" onclick = formularabsenden(1)>
                         </fieldset>
                     </form>
                       
                     <br>
                     <br>
-                    <a href="Zusammenfassung.html" id="submitb" input type="button" class="btn btn-success" onclick = formularabsenden()>Absenden</a>
-                    <script>
-                        document.getElementById('adresse').style.display = "none";
-                        document.getElementById('submitb').style.display = "none";
-                    </script>
+                    <form id="nurname" action="Zusammenfassung.html">
+                        <fieldset>
+                        <legend>Kontaktdaten:
+                            <br>
+                            
+                        </legend>
+                        <input type="text" class="form-control" placeholder="Nachname" required>
+                        <input type="text" class="form-control" placeholder="Vorname" required>
+                        <input type="text" class="form-control" placeholder="E-Mail" required>
+                        <input type="reset" class = "btn btn-success">
+                        <input type="submit" value = "Absenden"  class="btn btn-success" onclick = formularabsenden(2)>
+                        </fieldset>
+                    </form>
+                    <br>
+                    <br>
+
+                  
                     
                    
                    
                     <a href="index.html" input type="button" class="btn btn-success">Zurück</a>
-                    
+
+                    <script>
+                    document.getElementById('adresse').style.display = "none";
+                    document.getElementById('nurname').style.display = "none";
+                    </script>
             </div>
             
         </div> 

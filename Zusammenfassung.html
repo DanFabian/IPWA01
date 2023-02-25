@@ -70,13 +70,24 @@
             <br>
             <p class = "text-center">
 
+                <script>
+                    if (sessionStorage.getItem(1) == "Geschäftsstelle") {
+                        
+                            document.write("<b>Kontaktdaten:</b>" + "<br>")
+    
+                            for (let i = 11; i < 14; i++) {
+                                document.write(sessionStorage.getItem(i) +"<br>");
+                            }
+                        }
+                     </script>
+
 
             <script>
                 if (sessionStorage.getItem(1) == "Abholung") {
-                    if(sessionStorage.getItem(14) > 54999 && sessionStorage.getItem(14) < 56001) {
+                    if(sessionStorage.getItem(15) > 54999 && sessionStorage.getItem(15) < 56001) {
                         document.write("<b>Adresse:</b>" + "<br>")
 
-                        for (let i = 11; i < 16; i++) {
+                        for (let i = 11; i < 17; i++) {
                             document.write(sessionStorage.getItem(i) +"<br>");
                         }
                     }
