@@ -77,7 +77,7 @@ function ausgabe(p) {
     }
 
 
-  // Überprüfung ob das Adressfeld sichtbar sein muss oder nicht. Wenn nicht dann ist ein alternativer Submit Button sichtbar
+  // Überprüfung ob das Adressfeld sichtbar sein muss oder nicht. Wenn nicht dann ist nur die Eingabe für Namen und Email sichtbar
   function checkinput() {
     var x = document.getElementById('adresse');
     var y = document.getElementById('nurname');
