@@ -50,12 +50,6 @@ function setzeArt(p){
     
 }
 
-    
-function ausgabe(p) {
-    document.getElementById("check").innerHTML = sessionStorage.getItem(p);
-}
-
-
   // Speicherung der Daten aus dem Adressformular
   function formularabsenden(p) {
         if(p == 1){
